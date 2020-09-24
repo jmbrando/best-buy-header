@@ -25,8 +25,15 @@ header a {
 
 header > ul {
   justify-content: flex-end;
+  height: 48px;
+  align-items: center;
 }
 
-header li {
+header > ul li {
   margin-left: 16px;
+}
+
+header > div:not(.dk-blue) {
+  display: flex;
+  justify-content: space-between;
 }
