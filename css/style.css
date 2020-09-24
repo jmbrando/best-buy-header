@@ -37,3 +37,9 @@ header > div:not(.dk-blue) {
   display: flex;
   justify-content: space-between;
 }
+
+header > div > ul:last-of-type {
+  flex-basis: 250px;
+  display: flex;
+  justify-content: space-between;
+}
