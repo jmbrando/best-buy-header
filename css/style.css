@@ -21,10 +21,18 @@ h3 {
   flex-basis: 100%;
 }
 
-main section: first-child {
+main section:first-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+main section:first-child section {
+  flex-basis: calc((100% - 16px) / 2);
+}
+
+main > section:nth-of-type(2) h3 {
+  text-align: left;
 }
 
 /*  Media Styles  */
