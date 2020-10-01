@@ -2,121 +2,181 @@ html {
   font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: #0046be;
-}
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-header ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
+header {
+  background-color: #0046be;
 }
 
-header a {
-  text-decoration: none;
-  color: white;
-}
-
-header > ul {
-  justify-content: flex-end;
-  height: 48px;
-  align-items: center;
-}
-
-header > ul li {
-  margin-left: 16px;
-}
-
-header > div:not(.dk-blue) {
-  display: flex;
-  justify-content: space-between;
-}
-
-header > div > ul:last-of-type {
-  flex-basis: 250px;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-/*  Main Styles   */
-
-main > section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-main > section > section {
-  flex-basis: calc((100% - 48px) / 3);
-}
-
-main > section > section:nth-of-type(4),
-main > section > section:nth-of-type(5) {
-  flex-basis: calc((100% - 24px) / 2);
+main {
+  padding: 20px;
+  /* background-color: tan; */
 }
 
 h3 {
-  flex-basis: 100%;
   text-align: center;
+  flex-basis: 100%;
 }
 
-
-/*  Footer Styles   */
-
-footer ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-footer > ul {
+main section: first-child {
   display: flex;
   flex-wrap: wrap;
-}
-
-footer > ul > li:first-child {
-  flex-basis: 75%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-footer > ul > li:first-child > ul {
-  flex-basis: 33.3%;
-}
-
-footer > ul > li:nth-child(2) {
-  flex-basis: 25%;
-}
-
-footer > ul > li:nth-child(2) > ul {
-  display: flex;
   justify-content: space-between;
 }
 
-footer > ul > li {
-  flex-basis: 100%;
+/*  Media Styles  */
+
+@media(min-width:768px) /*  Tablet Styles  */ {
+  main {
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  p {
+    flex-basis: 49%;
+  }
+
+  h3 {
+    flex-basis: 100%;
+  }
+
+
+
+
+
+  header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+
+  header > ul {
+    justify-content: flex-end;
+    height: 48px;
+    align-items: center;
+  }
+
+  header > ul li {
+    margin-left: 16px;
+  }
+
+  header > div:not(.dk-blue) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header > div > ul:last-of-type {
+    flex-basis: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /*  Main Styles   */
+
+  main > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main > section > section {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+
+  main > section > section:nth-of-type(4),
+  main > section > section:nth-of-type(5) {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  h3 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+
+
+  /*  Footer Styles   */
+
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  footer > ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer > ul > li:first-child {
+    flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer > ul > li:first-child > ul {
+    flex-basis: 33.3%;
+  }
+
+  footer > ul > li:nth-child(2) {
+    flex-basis: 25%;
+  }
+
+  footer > ul > li:nth-child(2) > ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer > ul > li {
+    flex-basis: 100%;
+  }
+
+  footer > ul > li:last-child > ul {
+    display: flex;
+  }
+
+  footer > ul > li:last-child li:after {
+    content: '|';
+    padding: 0 5px;
+  }
+
+  footer > ul > li:last-child li:last-child:after {
+    content: '';
+  }
 }
 
-footer > ul > li:last-child > ul {
-  display: flex;
-}
+@media(min-width: 1100px) /*  Desktop Styles  */ {
+  body {
+    /* background-color: pink; */
+  }
 
-footer > ul > li:last-child li:after {
-  content: '|';
-  padding: 0 5px;
-}
+  main {
+    padding: 0;
+    /* background-color: pink; */
+  }
 
-footer > ul > li:last-child li:last-child:after {
-  content: '';
+
+
 }
