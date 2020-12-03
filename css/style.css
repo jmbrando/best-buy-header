@@ -46,8 +46,6 @@ header > div > ul:last-of-type {
   justify-content: space-between;
 }
 
-
-
 header form input {
   width: 100%;
   padding: 0.5rem 2rem 0.5rem 0.5rem;
@@ -68,6 +66,10 @@ header .dk-blue {
   margin-top: 1rem;
 }
 
-header nav {
-  width: 30rem;
+header .dk-blue ul {
+  justify-content: flex-start;
+}
+
+header .dk-blue ul li {
+  margin-right: 2rem;
 }
